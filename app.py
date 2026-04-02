@@ -106,8 +106,12 @@ async def fetch(input : UserInput):
 
     ac_hourly = ac_hourly*(system_kwp/350)
     dc_hourly = dc_hourly*(system_kwp/350)
+    print("Function changed")
 
     return {
         "ac_hourly": ac_hourly.tolist(),
         "dc_hourly": dc_hourly.tolist()
     }
+
+def test():
+    print("this is test function")
